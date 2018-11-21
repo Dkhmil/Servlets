@@ -35,14 +35,14 @@
 
 <div class="container2">
 
-<div>
-    <h1>Admin Page</h1>
-</div>
+    <div>
+        <h1>Admin Page</h1>
+    </div>
 
-<div class="mt-5">
-    <a href="<c:url value="/servlet/admin/content"/>"><h3>Manage content</h3></a>
-    <a href="<c:url value="/servlet/admin/users"/>"><h3>Manage users</h3></a>
-</div>
+    <div class="mt-5">
+        <a href="<c:url value="/servlet/admin/content"/>"><h3>Manage content</h3></a>
+        <a href="<c:url value="/servlet/admin/users"/>"><h3>Manage users</h3></a>
+    </div>
 
 </div>
 </body>

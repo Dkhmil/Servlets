@@ -1,6 +1,5 @@
 package com.khmil.model;
 
-
 import java.util.List;
 
 public class Category {

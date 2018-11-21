@@ -18,7 +18,6 @@ public class GetAllCategoriesAdminController implements Controller {
         this.VIEW_NAME = viewName;
     }
 
-
     @Override
     public ViewModel process(Request request) {
         List<Category> categories = categoryDao.findAll();

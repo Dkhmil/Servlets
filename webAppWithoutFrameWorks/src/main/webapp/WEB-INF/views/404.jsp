@@ -31,7 +31,7 @@
 <body>
 <%@include file="header.jsp" %>
 
-    <h1 class="container2">Page not found.</h1>
+<h1 class="container2">Page not found.</h1>
 
 </body>
 </html>

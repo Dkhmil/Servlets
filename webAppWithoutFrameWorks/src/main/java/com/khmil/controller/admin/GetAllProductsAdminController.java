@@ -16,7 +16,6 @@ public class GetAllProductsAdminController implements Controller {
         this.productService = productService;
     }
 
-
     @Override
     public ViewModel process(Request request) {
         List<Product> products = productService.findAll();

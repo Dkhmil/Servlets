@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/SimpleServlet")
 public class simpleServlet extends HttpServlet {
+
     public simpleServlet() {
         super();
     }

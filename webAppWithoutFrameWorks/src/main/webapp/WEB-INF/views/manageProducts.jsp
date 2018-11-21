@@ -59,8 +59,10 @@
                     <h3><c:out value="${p.category.name}"/></h3>
                 </div>
                 <div class="col-md-4">
-                    <a href="<c:url value="/servlet/admin/edit-product?c_id=${p.id}"/>" class="btn btn-outline-warning my-2 my-sm-0 ml-2">Edit</a>
-                    <a href="<c:url value="/servlet/admin/delete-product?c_id=${p.id}"/>" class="btn btn-outline-danger my-2 my-sm-0 ml-2">Delete</a>
+                    <a href="<c:url value="/servlet/admin/edit-product?c_id=${p.id}"/>"
+                       class="btn btn-outline-warning my-2 my-sm-0 ml-2">Edit</a>
+                    <a href="<c:url value="/servlet/admin/delete-product?c_id=${p.id}"/>"
+                       class="btn btn-outline-danger my-2 my-sm-0 ml-2">Delete</a>
                 </div>
             </div>
         </c:forEach>

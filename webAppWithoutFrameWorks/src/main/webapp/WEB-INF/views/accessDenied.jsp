@@ -24,8 +24,8 @@
 <body>
 <%@include file="header.jsp" %>
 
-    <div>
-        <h1>Sorry this page is not available for you</h1>
-    </div>
+<div>
+    <h1>Sorry this page is not available for you</h1>
+</div>
 </body>
 </html>

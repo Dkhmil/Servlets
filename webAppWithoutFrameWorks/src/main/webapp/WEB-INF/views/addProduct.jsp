@@ -47,6 +47,7 @@
             padding: 15px;
             margin: auto;
         }
+
         .form-signin .checkbox {
             font-weight: 400;
         }
@@ -55,35 +56,34 @@
 </head>
 <body>
 
-  <%@include file="header.jsp" %>
+<%@include file="header.jsp" %>
+<div>
+    <h2 class="container2">Add Product</h2>
 
+    <form class="form-signin" action="<c:url value="/servlet/admin/add-product"/>" method="post">
 
-  <div>
-      <h2 class="container2">Add Product</h2>
+        <label for="productName" class="sr-only mt-2">Product Name</label>
+        <input name="productName" type="text" id="productName" class="form-control" placeholder="Product Name" required
+               autofocus>
 
-      <form class="form-signin" action="<c:url value="/servlet/admin/add-product"/>" method="post">
+        <label for="price" class="sr-only mt-2">Price</label>
+        <input name="price" type="number" id="price" class="form-control" placeholder="Price" required>
 
-          <label for="productName" class="sr-only mt-2">Product Name</label>
-          <input name="productName" type="text" id="productName" class="form-control" placeholder="Product Name" required autofocus>
+        <label for="categoryId" class="sr-only mt-2">Category</label>
+        <select name="categoryId" id="categoryId">
+            <c:forEach var="c" items="${categories}">
+                <option value="${c.id}">${c.name}</option>
+            </c:forEach>
+        </select>
 
-          <label for="price" class="sr-only mt-2">Price</label>
-          <input name="price" type="number" id="price" class="form-control" placeholder="Price" required>
-
-          <label for="categoryId" class="sr-only mt-2">Category</label>
-          <select name="categoryId" id="categoryId">
-              <c:forEach var="c" items="${categories}">
-                  <option value="${c.id}">${c.name}</option>
-              </c:forEach>
-          </select>
-
-          <label for="description" class="sr-only">Description</label>
-          <textarea name="description" id="description" rows="4" cols="50">
+        <label for="description" class="sr-only">Description</label>
+        <textarea name="description" id="description" rows="4" cols="50">
 
           </textarea>
 
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
-      </form>
-  </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
+    </form>
+</div>
 
 </body>
 </html>

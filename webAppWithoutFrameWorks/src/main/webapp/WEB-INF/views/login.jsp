@@ -42,7 +42,7 @@
             padding: 15px;
             margin: auto;
         }
-        .form-signin .checkbox {
+        .form-singin .checkbox {
             font-weight: 400;
         }
         .form-signin .form-control {
